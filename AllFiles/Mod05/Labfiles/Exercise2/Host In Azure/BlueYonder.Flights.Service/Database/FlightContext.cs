@@ -17,7 +17,7 @@ namespace BlueYonder.Flights.Service.Database
 		
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var dbConnectionString = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_dbConnectionString");
+            var dbConnectionString = Environment.GetEnvironmentVariable("SQLCONNSTR_dbConnectionString");
 
             if (!optionsBuilder.IsConfigured)
             {
