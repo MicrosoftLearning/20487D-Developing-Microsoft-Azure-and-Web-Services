@@ -15,11 +15,11 @@
 2. Create a new **ASP.NET Core Web API** project. Then, run the following command:
     ```bash
     dotnet new webapi --name MyFirstEF --output [Repository Root]\Allfiles\Mod03\DemoFiles\FirstWebApi\Starter
-    ```  
+    ```
 3. After you create the project, run the following command to change the directory:
     ```bash
     cd [Repository Root]\Allfiles\Mod03\DemoFiles\FirstWebApi\Starter
-    ``` 
+    ```
 4. To restore all dependencies and tools of a project, run the following command:
     ```base
     dotnet restore
@@ -348,9 +348,9 @@
 4. To run the application with **IIS Express**, click **Debug**, and then click **Start Without Debugging**, or press Ctrl + F5.
    > **Note**: If a warning regarding SSL certificate appears, Click **Yes**.
 5. A new browser window will open. Verify that you are getting the following response:
-	```json
-		["value1", "value2"]
-	```
+    json
+    ["value1", "value2"]
+    
 6. You have learned how to host the website on **ISSExpress**. Next, you will learn how to host the website on **IIS**. 
 7. From the **Start** menu, open **Internet Information Services(IIS) Manager**.
 8. Right-click the **Sites** folder, and then select **Add Website..**.
@@ -371,9 +371,9 @@
 23. On the **Publish** blade, click **Publish**.
 24. Wait for the publishing process to complete.
 25. Open the browser and browse to **localhost:8080/api/Values**. Verify that you are getting a response similar to the following:
-	```json
-		["value1", "value2"]
-	```
+    json
+    ["value1", "value2"]
+    
 ©2018 Microsoft Corporation. All rights reserved.
 
 The text in this document is available under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/legalcode), additional terms may apply. All other content contained in this document (including, without limitation, trademarks, logos, images, etc.) are **not** included within the Creative Commons license grant. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.

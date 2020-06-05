@@ -18,7 +18,7 @@ namespace BlueYonder.Flights.Service.Controllers
         [HttpGet("Image/{photoName}")]
         public ActionResult<string> GetImage(string photoName)
         {
-            return Content(_baseUrl + photoName + ".jpg");
+            return _baseUrl + photoName + ".jpg";
         }
     }
 }

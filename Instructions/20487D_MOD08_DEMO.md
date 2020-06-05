@@ -27,7 +27,7 @@
 5. To open the project in Microsoft Visual Studio Code, run the following command:
    ```bash
     code .
-   ``` 
+   ```
 6. Click **Program.cs**, and then after **WebHost.CreateDefaultBuilder(args)**, paste the following code in the **CreateWebHostBuilder** method:
    ```cs
     .ConfigureLogging((hostingContext, logging) => 
@@ -51,7 +51,7 @@
     {
         _logger = logger;
     }
-    ```   
+    ```
 11. To the first **Get** method, before the **return**, add the following log information:
     ```cs
     _logger.LogInformation("Getting all values");
@@ -113,7 +113,7 @@
 9. To open the project in Visual Studio Code, run the following command:
    ```bash
     code .
-   ``` 
+   ```
 10. In Visual Studio Code, **Explorer** pane click **Program.cs**, to use **Serilog**, add the following **using** statement:
     ```cs
     using Serilog;
@@ -201,7 +201,7 @@
 13. To install **software-properties-common**, run the following command:
     ```bash
     apt-get install software-properties-common
-    ``` 
+    ```
 14. To update the list of packages, run the following command:
     ```bash
     apt-get update
@@ -344,11 +344,11 @@
 2. To create a new ASP.NET Core Web API project, paste the following command at the command prompt, and then press Enter:
     ```bash
     dotnet new webapi --name BlueYonder.Flights.Service --output [Repository Root]\Allfiles\Mod08\DemoFiles\Mod8Demo6\Starter\Code\BlueYonder.Flights.Service 
-    ```  
+    ```
 3. After the project is created, at the command prompt, change directory by running the following command and then press Enter:
     ```bash
     cd [Repository Root]\Allfiles\Mod08\DemoFiles\Mod8Demo6\Starter\Code\BlueYonder.Flights.Service
-    ```    
+    ```
 4. Add the following package:
    ```bash
     dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.4.1
@@ -397,7 +397,7 @@
           <Password>[Password]</Password>
         </PropertyGroup>
     </Project>
-    ``` 
+    ```
 14. In **PublishProfiles** Add a new file named **Azureprofile.xml** and paste the following code:
     ```cs
     <?xml version="1.0" encoding="utf-8"?>
@@ -409,7 +409,7 @@
         <databases />
       </publishProfile>
     </publishData>
-    ``` 
+    ```
 15. Click **Start**, search for **PowerShell** and right-click and select **Run as Administrator**.
 16. In the **User Account Control** modal, click **Yes**.
 17. Run the following command: **Install-Module azurerm -AllowClobber -MinimumVersion 5.4.1**.
@@ -421,7 +421,7 @@
 19. Run the following command:
     ```bash
       .\createAzureServices.ps1
-    ```        
+    ```
 20. You will be asked to supply a subscription ID, which you can get by performing the following steps:
     1. Open a browser and navigate to **http://portal.azure.com**. If a page appears, asking for your email address, enter your email address, and then click **Continue**. Wait for the **Sign-in** page to appear, enter your email address and password, and then click **Sign In**.
     2. In the top bar, in the search box, type **Cost**, and then in the results, click **Cost Management + Billing(Preview)**. The **Cost Management + Billing** window opens.

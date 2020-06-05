@@ -10,19 +10,20 @@ using BlueYonder.Flights.Service.Models;
 
 namespace BlueYonder.Flights.Service.Formatter
 {
-    public class ImageFormatter : OutputFormatter 
+    public class ImageFormatter : OutputFormatter
     {
         public ImageFormatter()
         {
             SupportedMediaTypes.Add(MediaTypeHeaderValue.Parse("image/png"));
+            SupportedMediaTypes.Add(MediaTypeHeaderValue.Parse("image/jpeg"));
         }
 
         public override async Task WriteResponseBodyAsync(OutputFormatterWriteContext context)
         {
-             HttpResponse response = context.HttpContext.Response;
+            HttpResponse response = context.HttpContext.Response;
             try
             {
-                ImageUrl image = context.Object as ImageUrl;
+                var image = new ImageUrl { Url = (string)context.Object };
                 if (image == null) return;
 
                 using (WebClient client = new WebClient())
@@ -31,11 +32,12 @@ namespace BlueYonder.Flights.Service.Formatter
                     response.Body.Write(imageData);
                 }
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 await response.WriteAsync("Error check the url in AircraftController");
             }
-            
+
         }
 
     }

@@ -5,4 +5,4 @@ services:
     ports:
      - "1235:80"
   webapp:
-    image: "myapp"
+    image: blueyonder

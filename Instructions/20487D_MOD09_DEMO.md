@@ -64,7 +64,7 @@
 3. To open the project in Microsoft Visual Studio Code, run the following command:
    ```bash
     code .
-   ``` 
+   ```
 4. Open the **appsettings.json** file, and then fill **ClientId** and **Authority** with the data from the preparation steps.
 5. Switch to the command prompt.
 6. To run the project, run the following command :
@@ -108,7 +108,7 @@
 3. To open the project in Visual Studio Code, run the following command:
    ```bash
     code .
-   ``` 
+   ```
 4. Open the **appsettings.json** file, and then fill **ClientId** and **TenantName** with the data from the preparation steps.
 5. Switch to the command prompt.
 6. To run the project, run the following command:

@@ -14,7 +14,7 @@
 2. Create a new **ASP.NET Core Web API** project. At the command prompt, paste the following command, and then press Enter:
    ```bash
     dotnet new console --name MyFirstEF --output [Repository Root]\Allfiles\Mod02\DemoFiles\MyFirstEF\Starter
-   ```  
+   ```
 3. After the project is created, to change the directory, at the command prompt, run the following command:
    ```bash
     cd [Repository Root]\Allfiles\Mod02\DemoFiles\MyFirstEF\Starter
@@ -113,7 +113,7 @@
    ```bash
    dotnet run
    ```
-20. Open **SQL Operations Studio**.
+20. Open **Azure Data Studio**.
 21. Click **New Connection**. The **Connection** window will appear.
 22. In the **Server** box, type **.\SQLEXPRESS**, and then click **Connect**.
 23. On the **Server** blade, expand **.\sqlexpress**, and then expand **Database**.
@@ -123,7 +123,7 @@
     >**Note**: Database tables are usually named in the plural form, which is why Entity Framework changed the names of the generated tables from Store and Product to Stores and Products. The dbo prefix is the name of the schema in which the tables were created.
 
 27. Expand the **dbo.Products** and **dbo.Stores** tables, and then expand the **Columns** node in each of them to see that both the tables have **Id** and **Name** columns, similar to their corresponding class properties.
-28. Close **SQL Operations Studio**.
+28. Close **Azure Data Studio**.
 29. Close all open windows.
 
 # Lesson 3: Querying Data

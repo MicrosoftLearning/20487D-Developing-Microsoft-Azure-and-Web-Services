@@ -262,7 +262,7 @@
 12. To change the directory to **BlueYonder.Hotels.Service**, run the following command:
    ```bash
     cd [Repository Root]\Allfiles\Mod07\DemoFiles\Mod7Demo6Redis\BlueYonder.Hotels.Service
-   ```  
+   ```
 13.  To open the project in Visual Studio Code, run the following command:
    ```bash
     code .

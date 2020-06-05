@@ -7,7 +7,7 @@ $SubscriptionId = Read-Host
 Select-AzureRmSubscription -SubscriptionId $SubscriptionId
 
 ### get the user name for resources naming in the script
-Write-Host "Please enter your name" -NoNewline
+Write-Host "Please enter your initials" -NoNewline
 Write-Host " - no more than 10 characters: " -ForegroundColor Yellow -NoNewline
 $yourName = Read-Host
 

@@ -218,7 +218,7 @@ After completing this lab, you will be able to:
 1. Open Microsoft Edge and go to the following URL:
    ```url
    https://blueyondermod07lab3{YourInitials}.azurewebsites.net/api/flights
-   ``` 
+   ```
 2. Check the **X-BlueYonder-Server** header and view the server name.
 
 #### Task 2: Verify you are accessing multiple instances

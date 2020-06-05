@@ -293,12 +293,12 @@ In this exercise, you will create a new Windows service, start and stop it by us
 2. Open a browser and navigate to:
    ```url
     http://localhost:7071/api/BookFlightFunc?flightId=1
-   ``` 
+   ```
 3. Check that you are getting the expected response.
 4. To check whether the travelers were actually booked to flight number 1, open a browser and go to the following address:
    ```url
    http://blueyonder-flights-{Your Initials}.azurewebsites.net/api/flights
-   ``` 
+   ```
     >**Note**: Replace **{Your Initials}** with your actual initials.
 
 5. Check that you are getting the expected response in the JSON format.
@@ -313,7 +313,7 @@ In this exercise, you will create a new Windows service, start and stop it by us
 4.  Publish your new Azure function to Azure and press Enter:
     ```bash
         func azure functionapp publish {Your App name}
-    ```            
+    ```
     >**Note**: Replace *{Your App name}* with your actual app name in Azure that you wrote in the previous point.
     
 #### Task 2: Test the Function App on Azure in a browser 
@@ -321,7 +321,7 @@ In this exercise, you will create a new Windows service, start and stop it by us
 1. Open a browser and navigate to:
    ```url
     https://{Your App Name}.azurewebsites.net/api/BookFlightFunc?flightId=1
-   ``` 
+   ```
     >**Note**: Replace **{Your App Name}** with your actual App name.
 2. Check whether you are getting the expected response.
 3. To check whether the travelers were actually booked to flight number 1, open a browser and navigate to:

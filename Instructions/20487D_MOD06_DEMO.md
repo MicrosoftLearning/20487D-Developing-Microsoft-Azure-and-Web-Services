@@ -167,7 +167,7 @@
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
-    ``` 
+    ```
 41. To save the file and exit, press **ESC** + **:** + **x** + **Enter**.
 42. To verify that the syntax of the configuration file is correct, run the following command:
     ```bash
@@ -180,7 +180,7 @@
 44. To switch the directory to the publish folder, run the following command:
     ```bash
     cd /var/demo/ubuntu.16.10-x64/publish/
-    ```  
+    ```
 45. To execute the premissions to binary, run the following command:
     ```bash
     chmod a+x ./Demo2Project
@@ -292,7 +292,7 @@ To present this demonstration, you must have a Microsoft account. If you have no
 31. To add the new files for the next commit, run the following command:
     ```bash
     git add .
-    ``` 
+    ```
 32. To commit the changes, run the following command:
     ```bash
     git commit -m "my first commit"

@@ -122,7 +122,7 @@
     ```url
     https://localhost:5001/api/passenger/5
     ```
-23. In the title bar, click **Settings and more**, and then select **Developer Tools**.
+23. To open the **Developer Tools**, press **F12**.
 24. In **Developer Tools**, click **Network**.
 25. In the **Network** tab, locate the following URL:
     ```url

@@ -7,7 +7,7 @@ $SubscriptionId = Read-Host
 Select-AzureRmSubscription -SubscriptionId $SubscriptionId
 
 ### get the user name for resources naming in the script
-Write-Host "Please enter your name" -NoNewline
+Write-Host "Please enter your initials" -NoNewline
 Write-Host " - no more than 10 characters: " -ForegroundColor Yellow -NoNewline
 $yourName = Read-Host
 
@@ -41,7 +41,7 @@ $RG = New-AzureRmResourceGroup -Name "$resourcesGroupName" -Location $location
 New-AzureRmResourceGroupDeployment -ResourceGroupName $RG.ResourceGroupName -TemplateFile $PSScriptRoot\template.json -TemplateParameterFile $PSScriptRoot\parameters.json -webappname $websiteName -hostingPlanName "plan$websiteName" -location $location -serverFarmResourceGroup $RG.ResourceGroupName -subscriptionId $SubscriptionId
 
 ### Deploy the code to the webapp
-$path = (get-item $PSScriptRoot).parent.FullName+"\Solution"
+$path = (get-item $PSScriptRoot).parent.FullName+"\Starter"
 Write-Host $path
 cd $path
 $profile = Get-AzureRmWebAppPublishingProfile -ResourceGroupName $RG.ResourceGroupName -Name $websiteName -Format WebDeploy -OutputFile "$path\Properties\PublishProfiles\Azureprofile.xml"
