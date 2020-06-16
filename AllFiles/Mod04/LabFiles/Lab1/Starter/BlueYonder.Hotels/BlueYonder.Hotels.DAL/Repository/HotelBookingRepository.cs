@@ -25,7 +25,7 @@ namespace BlueYonder.Hotels.DAL.Repository
                     (from room in context.Rooms
                      join reservation in context.Reservations on room equals reservation.Room into result
                      from reservation in result.DefaultIfEmpty()
-                     where date < reservation.CheckIn || date > reservation.CheckOut || room.Reservations.Count
+                     where date < reservation.CheckIn || date > reservation.CheckOut || room.Reservations.Count == 0
                      select room)
                     .ToList();
 
