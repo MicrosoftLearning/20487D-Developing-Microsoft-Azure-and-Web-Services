@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlueYonder.Hotels.DAL.Models;
 using BlueYonder.Hotels.DAL.Repository;
-using BlueYonderHotels.Service.Attributes;
+using BlueYonder.Hotels.Service.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlueYonderHotels.Service.Controllers
